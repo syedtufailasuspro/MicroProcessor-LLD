@@ -1,22 +1,29 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "java",
-            "name": "Current File",
+            "name": "Python: Current File",
+            "type": "python",
             "request": "launch",
-            "mainClass": "${file}"
+            "program": "${file}",
+            "console": "integratedTerminal"
         },
         {
-            "type": "java",
-            "name": "App",
+            "name": "Python: Main",
+            "type": "python",
             "request": "launch",
-            "mainClass": "microprocessor.lld.App",
-            "projectName": "app",
-            "args": ["INPUT_FILE=sample_input/input1.txt"]
+            "program": "main.py",
+            "args": [
+                "FILEPATH=sample_input/input1.txt"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Tests",
+            "type": "python",
+            "request": "launch",
+            "program": "tests.py",
+            "console": "integratedTerminal"
         }
     ]
 }

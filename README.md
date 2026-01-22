@@ -12,3 +12,17 @@ The microprocessor should be capable of handling following sets of instructions:
 7. `RST` : Resets the values stored inside all registers to 0.
 
 Note : It is very important for the code to be super extensible, so that we can support new instructions like AND, OR, XOR etc in future.
+
+## How to Run
+
+Requirements: Python 3.x
+
+Run the application using:
+```bash
+python main.py FILEPATH=sample_input/input1.txt
+```
+
+To run tests:
+```bash
+python tests.py
+```
